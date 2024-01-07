@@ -74,6 +74,7 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 plugins=(git zsh-autosuggestions history zsh-vi-mode
          ansible aliases autoenv z fasd autojump 
          zsh-syntax-highlighting zsh-you-should-use zsh-bat
+	 zsh-eza
 	 )
 
 
@@ -112,6 +113,8 @@ source $ZSH/oh-my-zsh.sh
 #
 #
 
-
+eval "$(zoxide init zsh)"
 # Created by `pipx` on 2024-01-07 07:59:53
 export PATH="$PATH:/root/.local/bin"
+
+source /root/.config/broot/launcher/bash/br

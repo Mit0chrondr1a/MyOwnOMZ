@@ -37,3 +37,9 @@
 [submodule "plugins/autoswitch_virtualenv"]
 	path = plugins/autoswitch_virtualenv
 	url = https://github.com/MichaelAquilina/zsh-autoswitch-virtualenv.git
+[submodule "plugins/zsh-aliases-exa"]
+	path = plugins/zsh-aliases-exa
+	url = https://github.com/DarrinTisdale/zsh-aliases-exa.git
+[submodule "plugins/zsh-eza"]
+	path = plugins/zsh-eza
+	url = https://github.com/z-shell/zsh-eza.git
