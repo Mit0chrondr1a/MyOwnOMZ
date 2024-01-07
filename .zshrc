@@ -73,9 +73,10 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git zsh-autosuggestions history zsh-vi-mode
          ansible aliases autoenv z fasd autojump 
-         zsh-syntax-highlighting zsh-you-should-use zsh-bat
-	 zsh-eza
-	 )
+         zsh-syntax-highlighting zsh-you-should-use
+	 zsh-bat)
+	# zsh-eza)
+	# comment out toxic behavior by default
 
 
 source $ZSH/oh-my-zsh.sh
@@ -114,6 +115,8 @@ source $ZSH/oh-my-zsh.sh
 #
 
 eval "$(zoxide init zsh)"
+eval "$(mcfly init zsh)"
+export MCFLY_LIGHT=TRUE
 # Created by `pipx` on 2024-01-07 07:59:53
 export PATH="$PATH:/root/.local/bin"
 
