@@ -1,6 +1,40 @@
-[submodule "plugins/zsh-vi-mode"]
-	path = plugins/zsh-vi-mode
-	url = https://github.com/jeffreytse/zsh-vi-mode
+	url = https://github.com/zsh-users/zsh-autosuggestions.git
 [submodule "plugins/zsh-autosuggestions"]
 	path = plugins/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions.git
+[submodule "plugins/zsh-vi-mode"]
+	path = plugins/zsh-vi-mode
+	url = https://github.com/jeffreytse/zsh-vi-mode.git
+[submodule "plugins/autojump"]
+	path = plugins/autojump
+	url = https://github.com/wting/autojump.git
+[submodule "plugins/autoenv"]
+	path = plugins/autoenv
+	url = https://github.com/zpm-zsh/autoenv.git
+[submodule "plugins/zsh-activate-py-environment"]
+	path = plugins/zsh-activate-py-environment
+	url = https://github.com/se-jaeger/zsh-activate-py-environment.git
+[submodule "plugins/apt-zsh-plugin"]
+	path = plugins/apt-zsh-plugin
+	url = https://github.com/GeoLMg/apt-zsh-plugin.git
+[submodule "plugins/zsh-autocomplete"]
+	path = plugins/zsh-autocomplete
+	url = https://github.com/marlonrichert/zsh-autocomplete.git
+[submodule "plugins/zsh-bat"]
+	path = plugins/zsh-bat
+	url = https://github.com/fdellwing/zsh-bat.git
+[submodule "plugins/zsh-syntax-highlighting"]
+	path = plugins/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule "plugins/zsh-you-should-use"]
+	path = plugins/zsh-you-should-use
+	url = https://github.com/MichaelAquilina/zsh-you-should-use.git
+[submodule "plugins/zsh-autoswitch-virtualenv"]
+	path = plugins/zsh-autoswitch-virtualenv
+	url = https://github.com/MichaelAquilina/zsh-autoswitch-virtualenv.git
+[submodule "plugins/-f"]
+	path = plugins/-f
+	url = https://github.com/MichaelAquilina/zsh-autoswitch-virtualenv.git
+[submodule "plugins/autoswitch_virtualenv"]
+	path = plugins/autoswitch_virtualenv
+	url = https://github.com/MichaelAquilina/zsh-autoswitch-virtualenv.git

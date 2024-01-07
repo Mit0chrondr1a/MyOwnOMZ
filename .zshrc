@@ -4,6 +4,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+export BAT_THEME="ansi"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -25,7 +26,7 @@ ZSH_THEME="apple"
 
 # Uncomment one of the following lines to change the auto-update behavior
 # zstyle ':omz:update' mode disabled  # disable automatic updates
-# zstyle ':omz:update' mode auto      # update automatically without asking
+zstyle ':omz:update' mode auto      # update automatically without asking
 # zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
 # Uncomment the following line to change how often to auto-update (in days).
@@ -70,12 +71,21 @@ ZSH_THEME="apple"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions history zsh-vi-mode)
+plugins=(git zsh-autosuggestions history zsh-vi-mode
+         ansible aliases autoenv z fasd autojump 
+         zsh-syntax-highlighting zsh-you-should-use zsh-bat
+	 )
+
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+#
+# Autojump related
+[[ -s /root/.autojump/etc/profile.d/autojump.sh ]] && source /root/.autojump/etc/profile.d/autojump.sh
 
+        autoload -U compinit && compinit -u
+# 
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -102,3 +112,6 @@ source $ZSH/oh-my-zsh.sh
 #
 #
 
+
+# Created by `pipx` on 2024-01-07 07:59:53
+export PATH="$PATH:/root/.local/bin"
