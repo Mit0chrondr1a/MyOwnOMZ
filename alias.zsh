@@ -9,3 +9,5 @@ alias mv='mv -i'
 
 alias cdsk='cd $(sk)'
 alias bi='brew install'
+alias apu='sudo apt update && sudo apt upgrade -y'
+alias api='sudo apt install'

@@ -122,3 +122,5 @@ source /Users/ryan/.config/broot/launcher/bash/br
 
 
 eval $(thefuck --alias)
+
+source /home/ryan/.config/broot/launcher/bash/br
