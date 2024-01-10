@@ -74,7 +74,7 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 plugins=(git zsh-autosuggestions history zsh-vi-mode
          ansible aliases autoenv z fasd autojump 
          zsh-syntax-highlighting zsh-you-should-use zsh-bat
-	 zsh-eza
+	 zsh-eza brew
 	 )
 
 
@@ -114,7 +114,12 @@ source $ZSH/oh-my-zsh.sh
 #
 
 eval "$(zoxide init zsh)"
+eval "$(mcfly init zsh)"
+export MCFLY_LIGHT=TRUE
 # Created by `pipx` on 2024-01-07 07:59:53
 export PATH="$PATH:/root/.local/bin"
 
-source /root/.config/broot/launcher/bash/br
+source /Users/ryanng/.config/broot/launcher/bash/br
+
+
+eval $(thefuck --alias)
