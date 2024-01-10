@@ -115,11 +115,10 @@ source $ZSH/oh-my-zsh.sh
 
 eval "$(zoxide init zsh)"
 eval "$(mcfly init zsh)"
-export MCFLY_LIGHT=TRUE
 # Created by `pipx` on 2024-01-07 07:59:53
 export PATH="$PATH:/root/.local/bin"
 
-source /Users/ryanng/.config/broot/launcher/bash/br
+source /Users/ryan/.config/broot/launcher/bash/br
 
 
 eval $(thefuck --alias)
