@@ -74,9 +74,8 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 plugins=(git zsh-autosuggestions history zsh-vi-mode
          ansible aliases autoenv z fasd autojump 
          zsh-syntax-highlighting zsh-you-should-use
-	 zsh-bat)
-	# zsh-eza)
-	# comment out toxic behavior by default
+	 zsh-bat
+	 zsh-eza)
 
 
 source $ZSH/oh-my-zsh.sh
@@ -114,6 +113,7 @@ source $ZSH/oh-my-zsh.sh
 #
 #
 
+eval $(thefuck --alias)
 eval "$(zoxide init zsh)"
 eval "$(mcfly init zsh)"
 export MCFLY_LIGHT=TRUE

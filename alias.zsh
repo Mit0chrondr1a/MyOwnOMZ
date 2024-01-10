@@ -11,9 +11,11 @@ alias cdsk='cd $(sk)'
 #alias la='ls -a'
 #alias lal='ls -al'
 
-# apt related
-alias apu='sudo apt update && sudo apt upgrade -y'
-alias api='sudo apt install -y'
+# RHEL specific
+alias firewalld='firewall-cmd'
+alias ssctl='systemctl'
+alias firehow='firewalld --help | grep'
+alias firemod='firewalld --zone=public'
 
 # homebrew related
 alias brr='brew remove'
