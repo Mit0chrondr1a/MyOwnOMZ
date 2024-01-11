@@ -20,9 +20,6 @@
  set background=dark           " Optimize colors for a dark background
  colorscheme default           " Use the default color scheme
 
-" " Enable mouse support
- set mouse=a
-"
 " " Better command-line completion
  set wildmenu
  set wildmode=list:longest
