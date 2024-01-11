@@ -128,9 +128,9 @@ source /home/ryan/.config/broot/launcher/bash/br
 # Start SSH Agent and add all keys
 if [ -z "$SSH_AUTH_SOCK" ] ; then
         eval $(ssh-agent -s)
-#            for key in ~/.ssh/id_*; do
-#                        [[ -f $key ]] && ssh-add $key
-#                            done
-#                                unset key
-#                                fi
-#
+            for key in ~/.ssh/id_*; do
+                        [[ -f $key ]] && ssh-add $key
+                            done
+                                unset key
+                                fi
+
