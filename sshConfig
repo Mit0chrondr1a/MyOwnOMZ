@@ -3,3 +3,6 @@ Host *
 
 Host github.com
     IdentityFile ~/.ssh/id_github
+
+Host star1ink.com
+    IdentityFile ~/.ssh/id_vps
