@@ -74,7 +74,7 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 plugins=(git zsh-autosuggestions history zsh-vi-mode
          ansible aliases autoenv z fasd autojump 
          zsh-syntax-highlighting zsh-you-should-use zsh-bat
-	 zsh-eza brew
+	 zsh-eza brew fzf
 	 )
 
 
