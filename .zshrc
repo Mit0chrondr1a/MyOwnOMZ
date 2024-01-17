@@ -74,7 +74,7 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 plugins=(git zsh-autosuggestions history zsh-vi-mode
          ansible aliases autoenv z fasd autojump 
          zsh-syntax-highlighting zsh-you-should-use zsh-bat
-	 zsh-eza brew
+	 zsh-eza brew fzf
 	 )
 
 
@@ -134,3 +134,22 @@ if [ -z "$SSH_AUTH_SOCK" ] ; then
                                 unset key
                                 fi
 
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/ryan/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/ryan/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/ryan/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/ryan/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+export "LD_LIBRARY_PATH=/usr/lib/wsl/lib"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
