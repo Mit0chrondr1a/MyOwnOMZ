@@ -31,3 +31,4 @@
 " " Disable creating swap files
  set noswapfile
 
+set rtp+=/home/linuxbrew/.linuxbrew/opt/fzf

@@ -74,7 +74,7 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 plugins=(git zsh-autosuggestions history zsh-vi-mode
          ansible aliases autoenv z fasd autojump 
          zsh-syntax-highlighting zsh-you-should-use zsh-bat
-	 zsh-eza brew
+	 zsh-eza brew fzf
 	 )
 
 
@@ -151,3 +151,5 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 export "LD_LIBRARY_PATH=/usr/lib/wsl/lib"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
