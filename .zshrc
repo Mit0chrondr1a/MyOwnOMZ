@@ -123,3 +123,6 @@ source /Users/ryanng/.config/broot/launcher/bash/br
 
 
 eval $(thefuck --alias)
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_COMMAND='fd --type file --hidden --no-ignore'
