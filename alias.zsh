@@ -19,3 +19,5 @@ alias bi='brew install'
 alias gca='git commit --amend'
 alias gcm='git commit -m'
 alias gcam='git commit -am'
+
+alias cdfzf='cd $(fzf)'
