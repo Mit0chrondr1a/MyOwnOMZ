@@ -121,3 +121,11 @@ export MCFLY_LIGHT=TRUE
 export PATH="$PATH:/root/.local/bin"
 
 source /root/.config/broot/launcher/bash/br
+
+eval $(thefuck --alias)
+
+source /home/ryan/.config/broot/launcher/bash/br
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export FZF_DEFAULT_COMMAND='fd --type file --hidden --no-ignore'
