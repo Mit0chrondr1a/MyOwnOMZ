@@ -153,3 +153,4 @@ unset __conda_setup
 export "LD_LIBRARY_PATH=/usr/lib/wsl/lib"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_COMMAND='fd --type file --hidden --no-ignore'
