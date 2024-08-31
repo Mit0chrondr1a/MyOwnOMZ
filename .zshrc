@@ -135,6 +135,16 @@ if [ -z "$SSH_AUTH_SOCK" ] ; then
                                 fi
 
 
+export "LD_LIBRARY_PATH=/usr/lib/wsl/lib"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_COMMAND='fd --type file --hidden --no-ignore'
+
+# Created by `pipx` on 2024-01-30 08:45:04
+export PATH="$PATH:/home/ryan/.local/bin"
+export MODULAR_HOME="/home/ryan/.modular"
+export PATH="/home/ryan/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/ryan/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
@@ -150,7 +160,7 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-export "LD_LIBRARY_PATH=/usr/lib/wsl/lib"
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export FZF_DEFAULT_COMMAND='fd --type file --hidden --no-ignore'
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+export PATH=$PATH:/home/ryan/.cargo/bin
