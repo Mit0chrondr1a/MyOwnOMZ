@@ -126,3 +126,8 @@ eval $(thefuck --alias)
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND='fd --type file --hidden --no-ignore'
+export MODULAR_HOME="/Users/ryanng/.modular"
+export PATH="/Users/ryanng/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
+
+# Created by `pipx` on 2024-03-05 05:47:52
+export PATH="$PATH:/Users/ryanng/.local/bin"
