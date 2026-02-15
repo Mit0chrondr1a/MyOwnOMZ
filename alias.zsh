@@ -26,3 +26,4 @@ alias gcam='git commit -am'
 
 alias cdfzf='cd $(fzf)'
 alias vimfzf='vim $(fd -H|fzf)'
+alias rgf='rg --files | rg'
