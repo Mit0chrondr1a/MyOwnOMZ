@@ -118,22 +118,10 @@ eval "$(mcfly init zsh)"
 # Created by `pipx` on 2024-01-07 07:59:53
 export PATH="$PATH:/root/.local/bin"
 
-source /Users/ryan/.config/broot/launcher/bash/br
-
 
 eval $(thefuck --alias)
 
 source /home/ryan/.config/broot/launcher/bash/br
-
-# Start SSH Agent and add all keys
-if [ -z "$SSH_AUTH_SOCK" ] ; then
-        eval $(ssh-agent -s)
-            for key in ~/.ssh/id_*; do
-                        [[ -f $key ]] && ssh-add $key
-                            done
-                                unset key
-                                fi
-
 
 export "LD_LIBRARY_PATH=/usr/lib/wsl/lib"
 
@@ -163,4 +151,17 @@ unset __conda_setup
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
-export PATH=$PATH:/home/ryan/.cargo/bin
+export PATH=$PATH:$HOME/.cargo/bin
+export PATH=$PATH:$HOME/go/bin
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:/mnt/c/Users/GarbageCollector/AppData/Local/Programs/cursor/resources/app/bin
+
+# Start SSH Agent and add all keys
+if [ -z "$SSH_AUTH_SOCK" ] ; then
+        eval $(ssh-agent -s)
+            for key in ~/.ssh/id_*; do
+                        [[ -f $key ]] && ssh-add $key
+                            done
+                                unset key
+                                fi
+
