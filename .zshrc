@@ -155,6 +155,20 @@ export PATH=$PATH:$HOME/.cargo/bin
 export PATH=$PATH:$HOME/go/bin
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:/mnt/c/Users/GarbageCollector/AppData/Local/Programs/cursor/resources/app/bin
+export CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Claude Code: auto-load all local plugins from ~/.claude/plugins/
+claude() {
+  local flags=()
+  for d in ~/.claude/plugins/*/; do
+    [ -f "$d/.claude-plugin/plugin.json" ] && flags+=(--plugin-dir "$d")
+  done
+  command claude "${flags[@]}" "$@"
+}
 
 # Start SSH Agent and add all keys
 if [ -z "$SSH_AUTH_SOCK" ] ; then
