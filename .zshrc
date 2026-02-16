@@ -169,6 +169,8 @@ claude() {
   done
   command claude "${flags[@]}" "$@"
 }
+# activate mise
+eval "$(mise activate zsh)"
 
 # Start SSH Agent and add all keys
 if [ -z "$SSH_AUTH_SOCK" ] ; then
